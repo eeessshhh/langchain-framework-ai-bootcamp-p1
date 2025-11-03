@@ -1,0 +1,30 @@
+🚀 Section 1: Getting started!
+
+DEFINITIONS:
+🟢 Data Science: Umbrella term for a field that includes extracting insights from data and using it for a certain motive.
+🟢 AI: Creating algorithms / machines that can perform human tasks.
+🟢 ML: The ability of a system to learn on its own and improve based on training given to it.
+🟢 Deep Learning: A subset of ML that uses Artificial Neural Networks with multiple layers to learn from data.
+
+WEAK AI v/s STRONG AI:
+- weak AI (eg: chatgpt) needs a user to input stuff and ask it to perform tasks.
+- strong AI (AGI or Artificial General Intelligence) is yet to be pursued and will be able to create and discover stuff on its own.
+
+🚀 Section 2: Data talk.
+
+🎯 Structured and unstructured data:
+
+Structured and unstructured data are two main types of data. In real life we are most commonly faced with unstructured data. 
+For example: MNIST dataset: thousands of graphic images of handwritten numbers. 
+For another example: Videos and images are nothing but pixel value ranges noted in binary or other counting methods and get transcribed accordingly into a computer.
+The goal is to find a way to convert unstructured data into structured, so that machines can understand and learn from it.
+
+🎯 Labelled and unlabelled data:
+
+These are the two primary methods of collecting and preparing data for AI modelling.
+Labelled data is where categories in data are defined. Is this a picture of a dog or not? Is this review positive or negative or neutral?
+Unlabelled data does not have defined categories when giving it to the model to train on.
+
+🎯 Metadata:
+
+It is basically the data that describes our dataset.
