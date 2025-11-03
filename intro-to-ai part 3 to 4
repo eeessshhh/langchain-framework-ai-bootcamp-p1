@@ -1,0 +1,71 @@
+🚀 Section 3: Key AI Techniques
+
+🎯 ML
+
+ML algorithm performs better with better quality of data. The algorithm learns to recognize patterns in the training data. 
+Its goal is to solve problems on unseen data. A simple model with lots of good data is better than a complex model with inadequate data.
+It is crucial to develop robust AI systems that can handle diverse data challenges and evolve with them.
+
+🎯 Supervised and Unsupervised learning:
+
+- supervised = trained on labelled data. 
+applications can be either classification or prediction.
+classification: if data was "is this image a dog or not" then it will classify unseen data as dog or not.
+prediction: estimating house price based on house features. it has historic data and will predict a number. (this is also called regression task)
+
+- unsupervised = trained on unlabelled data; but we give a set of rules to the machine.
+we tell the machine what our desired outcome is, and let it figure out by itself how to get there.
+this is called reinforcement learning. basically model learns thru trial and error. 
+
+🎯 Deep Learning:
+
+It allows machines to learn by processing the input information in stages (layers).
+In the context of neural networks, each layer of neurons represents a transformation of input data at varying levels of complexity.
+
+🚀 Section 4: Important AI branches
+
+🎯 Robotics
+
+It deals with design, construction, operation and use of machines that can perform human like tasks automatically.
+Mechanical engineers construct the machines.
+Electronics and electrical engineers add mechanisms to control and operate that machine.
+AI developers help build the algorithm to reflect the actions and control of the machine. 
+Hence robotics is interdisciplinary.
+
+🎯 Computer vision
+
+If AI functions as the brain, then computer vision is its eyes. Input is images and videos. There are 4 main families of computer vision models:
+📌 CNNs (convolutional neural networks):
+  - great for working with high dimensional data such as image data.
+  - they are great at organizing the elements in an image based on their importance and depth in the image (near v/s far).
+
+📌 Transformers
+  - transformer architecture. (more on this later)
+
+📌 GANs (Generative Adversarial Networks)
+  - basically these create lifelike images.
+
+📌 U-NETs
+  - used in medical image segmentation
+
+
+🎯 Generative AI
+
+Generative AI = The type of AI which can generate new content is called generative AI.
+
+📌 LLM (large language model)
+  - this is the foundational technology behind ChatGPT
+  - they are trained on vast text volumes learning word relationships
+
+📌 Diffusion models
+  - generate images and videos
+
+📌 GANs (Generative Adversarial Networks)
+  - compares two algorithms
+  - one creates content and other judges its realism
+
+📌 Neural Radiance
+  - AI for 3D modelling
+
+📌 Hybrid Model
+  - combines LLM + GAN creating a powerful content generation system
