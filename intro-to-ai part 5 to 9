@@ -1,0 +1,92 @@
+🚀 SECTION 5: UNDERSTANDING GEN AI
+
+🟢 NLP (Natural Language Processing): a field that studies how computer understand, interpret and generate human language data.
+
+📌 Vector embeddings: transforming words and sentences into numerical arrays
+(basically transforming unstructured data into structured data)
+They are not 2D, 3D or even 4D; they are highly dimensional (think thousands of dimensions to a single vector aka sentence or paragraph)
+
+📌 There are two types of language models:
+- Masked: can guess the missing word in a sentence regardless of its position in the sentence.
+- Autoregressive: uses preceeding words to predict next word at the end of the sentence.
+
+📌 There are four core language modelling techniques:
+- n grams
+- recurrent neural networks (this has vanishing gradient problem meaning the model forgets previous context as it learns further. to combat this...)
+- LSTMs (... they made long short term memory model which allows model to choose what to retain and what to discard)
+- transformers (model assesses the importance / significance of word clusters in a para or sentence. basically identifies key words, reducing computational cost)
+
+📌 Phases in building an LLM:
+  🧠 Model design: selecting strategy and algorithm architecture. define what the model should ideally do.
+  🧠 Dataset Engineering: collect, clean and structure the data.
+  🧠 Pre training: raw version of model.
+  🧠 Preliminary Evaluation: the developers take a call by comparing with primary outcomes.
+  🧠 Post training: supervised finetuning + refine using human feedback
+  🧠 Finetuning: update model weights and make it more robust.
+  🧠 Final testing and Evaluation: stricter eval taking into account ethics and end users.
+
+Before discussing differences between the next following three terms, 
+we must understand that they all are used to enhance a LLM's response accuracy and effectiveness by acting on different aspects of the AI functionality:
+
+🟢 Prompt Engineering: 
+- we explain model how to behave
+- model adapts to our requests, but model itself DOES NOT CHANGE.
+- no weight changes in model.
+
+🟢 RAG (Retrieval Augmented Generation):
+- we give WAY more context to model, more than just a simple prompt
+- we provide a dataset / library to the model.
+- again, no weight changes in model.
+
+🟢 Finetuning:
+- additional training for an existing model
+- we give more data
+- we change model weights
+- this one is computationally the most expensive among the three.
+
+Now if you remember you wrote a term "hybrind model"?
+The correct term for a model handling multimodal data would be FOUNDATION MODEL. 
+
+____________________________________
+🚀 SECTION 6: PRACTICAL CHALLENGES IN GEN AI
+
+🤔 Hallucinations: provides false output just to show a response was generated. maybe because the model was trained on incorrect data.
+(pro tip: ask the model to answer only if it knows the answer.)
+🤔 Inconsistencies: due to hardware variations on different devices used to host the model.
+(pro tip: ask the model to take its time when generating a response)
+🤔 Budgeting and API costs: larger model size and dataset size and quality comes with high costs. 
+(it cost openAI 100 million dollars to train chatgpt. now think of the fact that it needs to be done correctly the first time and one cannot afford to do it again and again)
+🤔 Latency: loading time could be too high when using autoregressive method which relies on previous text to predict next text. 
+
+____________________________________
+🚀 SECTION 7: THE AI TECH STACK
+
+⭐ Python: 
+  - Numpy: multidimensional arrays, matrices, math functions.
+  - Pandas: data pre proc
+  - Matplotlib: data viz
+
+⭐ API (Application programming interfaces):
+  - serves as a bridge between a client and server 
+  - involves an API request and an API response
+
+⭐ Vector databases:
+  - the way we use RDBMs for structured data, we cannot use them for unstructured data because it is vast.
+  - instead we use vector databases that store the vector embeddings
+  - in the database, they get clustered based on their similarities (eg netflix groups romcoms together and away from thrillers)
+
+⭐ Hugging Face:
+  - referred to as the github of machine learning. 
+  - is the leading advocate for open source AI. 
+  - is s place where one can find existing ML models, use pre-trained ML models and upload their own ML models.
+
+⭐ LangChain:
+  - valuable tool for developing AI powered apps. 
+  - it is an open source orchestration environment
+  - avbl in python and javascript.
+  - allows you to build any app and use any foundation model with it.
+  - no need to write code because it has readymade modular components (think: lego blocks)
+  - one can also integrate external data sources.
+
+____________________________________
+🚀 SECTIONS 8 and 9 were more general info based hence no notes needed.
