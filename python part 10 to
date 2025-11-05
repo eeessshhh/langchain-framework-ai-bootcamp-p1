@@ -1,0 +1,19 @@
+🚀 SECTION 10 AND 11: NAVIGATING JUPYTER
+
+I already am familiar with jupyter so only noting down any new things and some shortcuts here:
+  🧠 Shift + Enter = create a new coding cell in jupyter instead of manually adding in using the plus button below an existing cell.
+  🧠 Ctrl + Shift + Enter = gives u a list of all keyboard shortcuts you can use in the jupyterlab.
+  🧠 Restarting a kernel = helps clear outputs of all cells and lets u start fresh.
+      Alternatively, u can do restart kernel and run all cells to execute the whole file fresh from scratch. 
+
+__________________________________________________
+🚀 SECTION 12: PYTHON VARS AND DATA TYPES
+
+- made a small blunder with using the printf statement so adding it here:
+m = 100
+print(f"{m} days")
+
+- use anaconda assistant (its like an inbuilt AI assistant) if u get stuck w sm related to the IDE or ur code.
+
+__________________________________________________
+🚀 SECTION 13: BASIC PYTHON SYNTAX
