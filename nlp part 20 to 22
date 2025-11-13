@@ -1,0 +1,61 @@
+🚀 SECTION 20: DATA PRE-PROCESSING
+
+🏷️ 1. General Cleaning: 
+      - organize the data
+      - tidy up the text
+      - remove anything that can throw you an error
+
+🏷️ 2. Denoising
+      - remove aspects of data that do not add any value to the insights
+
+🏷️ 3. Get the data in the right format for our ML algorithm.
+
+🖍️ conda create env is like booking an empty room and using pip ibstall to install libraries is like adding furniture to the room.
+
+🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆
+� Before we move ahead, all the python notebooks used in this module have been forked in my github under Original NLP module �
+🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆🔆
+
+🚀 SECTION 21: PRE-PROCESSING TEXT DATA IN NLP
+
+The following are general steps used in NLP to pre process the text data for further analysis or a basic preliminary analysis of the text and language data at hand.
+
+🔑 converting all our text to lowercase in order to reduce the number of tokens. (eg: apple and Apple will be the same token)
+
+🔑 remove stopwords. (eg: a, an, the, if) they are useless and can be filtered out. one can choose to retain some stopwords and remove other ones with respect to the pararaph you have at hand.
+
+🔑 regex operations: 
+    - raw strings use an "r" before a quotation mark to indicate they are supposed to treat backslashes and fwd slashes exactly as that, and not as newline or division sign indicators.
+    - re.search is a function which allows us to check if a certain pattern is in a string.
+    - re.sub allows us to find certain text and replace it.
+    - pattern_to_find = r"sarah?" the question mark will fins all saras and sarahs
+    - pattern_to_find = r"^a"  will find reviews that start with letter a
+    - pattern_to_find = r"y$"  will find reviews that end with letter y
+    - pattern_to_find = r"(need|want)ed"  will help us find reviews that contain the words needed or wanted
+    - pattern_to_find = r"[^\w\s]"   will remove anything from the review that isn't a word or a space (i.e. remove punctuation)
+
+🔑 Tokenization = breaking a sentence into smaller words.
+    - sent_tokenize(sentences_list): will break a list of multiple sentences into individual sentences.
+    - word_tokenize(sentence_2): will break a single sentence into individual words.
+
+🔑 Stemming = merely chops off the end of a word (eg: swimming -> swim)
+    - create a stemmer by importing a certain package and then use it to stem ur words. same way we import pandas as pd and then do pd.function()
+
+🔑 Lemmatization = actually strips each word down to the meaning of its base word.
+    - learner will remain :  learner
+    - learners will change to :  learner
+    - connected will remain :  connected
+    - connectivity will remain :  connectivity
+
+🔑 n - grams: helps us analyze relationships between neighbouring words. it is a sequence of n tokens. (unigrams, bigrams, trigrams)
+
+🔑 there is a practical case study included in the repo as well in case you wanna have a practical example to run and experiment on. have fun!
+
+🚀 SECTION 22: POS and NER
+
+There are two types of tagging you can do to your text:
+🏷️ POS (part of speech) = tagging each token with what part of speech it is (eg: verb, adverb, noun, adjective)
+🏷️ NER (named entity recognition) = extracts plural nouns such as Names, Geographical locations, ordinal terms, locations, person names, etc.
+
+again, 
+🔑 there is a practical case study included in the repo as well in case you wanna have a practical example to run and experiment on. have fun!
