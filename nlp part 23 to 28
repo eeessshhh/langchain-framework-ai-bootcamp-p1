@@ -1,0 +1,65 @@
+🚀 SECTION 23: SENTIMENT ANALYSIS
+
+1. Lexicon / Rule - based analysis:
+    - a lexicon is basically a collection of words paired with their predefined sentient scores.
+    - uses a set of predefined rules that connect words to emotions / attitudes.
+    - each word is assigned a polarity score (a number which indicates if the word is positive, negative or neutral)
+    - score usually ranges from -1 to 1.
+    
+Two popular python packages that follow lexicon method:
+  📌 TextBlob:
+    - gives one single score to each sentence that you input
+    - like only assigns 0.2 to a certain sentence
+  📌 VADER:
+    - gives a score in each category for a sentence
+    - gives 0.8 positive -0.9 negative and 0.2 neutral to a certain sentence.
+
+2. Pre - trained Transformers
+    - captures how words influence and relate to each other even if they appear far apart in a sentence.
+    - basically they understand context.
+
+🚀 SECTION 24: TEXT VECTORIZATION
+
+(basically converting text data into numerical vectors that a machine can understand and learn through)
+
+1. Bag of Words model:
+    - just counts which words appear in which documents.
+    - common libraries are scikit-learn(count vectorizer)
+
+2. Term Frequency Inverse Document Frequency (TF - IDF):
+    - calculates relative frequency of words within a document
+    - basically tells us how important that word is
+    - more common a word, lower the score
+    - less common a word, higher the score.
+
+🚀 SECTION 25: TOPIC MODELLING
+
+(basically identifying patterns in large datasets)
+there are two algorithms:
+
+1. LDA (Latent Dirichlet Allocation)
+    - Uses probability and Bayesian inference to discover latent topics. It is a generative probabilistic model.
+    - More interpretable. Outputs explicit, meaningful topics as lists of words with probabilities (e.g., "gene, dna, cell").
+    - Handles polysemy better. A word like "bank" can appear in multiple topics (e.g., a "finance" topic and a "river" topic) with different probabilities.
+
+2. LSA (Latent Semantic Analysis)
+    - Uses linear algebra (Singular Value Decomposition) to find hidden semantic spaces. It is a bag-of-words model.
+    - Less interpretable. The "concepts" it finds are mathematical constructs (eigenvectors) that are hard to label as coherent topics.
+    - Struggles with polysemy (words with multiple meanings). It places a word in a single, broad conceptual vector.
+
+
+🚀 SECTION 26: BUILDING YOUR OWN TEXT CLASSIFIER
+
+📌 Logistic Regression:
+    - It is different from linear regression whose task i sto predict a certain continuous number value.
+    - logistic one is used to predict classes, example: will this student pass or fail?
+
+📌 Naive Bayes:
+    - a simple classificaiton algorithm that works using probabilities. 
+    - basically it'll tell us what the probability of student failing and that of passing is.
+
+📌 Linear SVM (support vector machine)
+    - finds the best possible boundary that separates different categories.
+
+🚀 SECTION 27 and 🚀 SECTION 28: 
+Case study and a Recap and summary of the whole module.
